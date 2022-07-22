@@ -8,9 +8,9 @@ export default function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
-      <CyclesContextProvider>
-        <Router />
-      </CyclesContextProvider>
+        <CyclesContextProvider>
+          <Router />
+        </CyclesContextProvider>
       </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
