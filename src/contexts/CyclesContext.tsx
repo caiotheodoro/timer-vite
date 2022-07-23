@@ -45,7 +45,7 @@ export function CyclesContextProvider({ children }: CycleProviderProps) {
     },
     () => {
       const cyclesStored = localStorage.getItem(
-        '@pomodoro-mijo-bosta:cycles-state-1.0.0',
+        '@timer-vite:cycles-state-1.0.0',
       )
       if (cyclesStored) {
         return JSON.parse(cyclesStored)
@@ -69,7 +69,7 @@ export function CyclesContextProvider({ children }: CycleProviderProps) {
 
   useEffect(() => {
     const stateJSON = JSON.stringify(cyclesState)
-    localStorage.setItem('@pomodoro-mijo-bosta:cycles-state-1.0.0', stateJSON)
+    localStorage.setItem('@timer-vite:cycles-state-1.0.0', stateJSON)
   }, [cyclesState])
 
   const changeSecondsPassed = (seconds: number) => {

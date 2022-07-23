@@ -5,18 +5,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  img {
-    animation: rotation 2s infinite linear;
 
-    @keyframes rotation {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(359deg);
-      }
-    }
-  }
 
   nav {
     display: flex;
