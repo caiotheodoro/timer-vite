@@ -22,6 +22,7 @@ export function NewCycleForm() {
         <option value="Desenvolver o site" />
         <option value="Desenvolver o app" />
         <option value="Desenvolver o aplicativo" />
+        <option value="Estudar" />
       </datalist>
       <label htmlFor="minutesAmount">durante</label>
       <MinutesAmountInput
